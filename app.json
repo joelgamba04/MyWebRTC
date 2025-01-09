@@ -19,7 +19,8 @@
       "permissions": [
         "android.permission.RECORD_AUDIO",
         "android.permission.CAMERA"
-      ]
+      ],
+      "package": "com.joelgamba.MyWebRTC"
     },
     "web": {
       "bundler": "metro",
@@ -40,6 +41,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ce5ebd6e-1924-43a8-8d57-3808de20e6e0"
+      }
     }
   }
 }
