@@ -48,3 +48,51 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## Building to development mode
+
+- // Install EAS (Expo Application Service) Globally
+```bash
+npm install -g eas-cli
+```
+
+- // Check version
+```bash
+eas -v
+```
+
+- // Check account logged install
+```bash
+eas whoami
+```
+
+- // Log in on expo account
+```bash
+eas login
+```
+
+- // add local project to eas
+```bash
+eas init
+```
+
+- // configure build
+```bash
+eas build:configure
+```
+
+- // Install libs to enable eas building
+```bash
+expo install expo-dev-client
+```
+
+- // build a development build (version) for android 
+```bash
+eas build --profile development --platform android 
+```
+
+//connect local server with phone
+// same wifi is req
+```bash
+npx expo start --tunnel
+```
