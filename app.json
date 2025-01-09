@@ -15,7 +15,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +41,5 @@
     "experiments": {
       "typedRoutes": true
     }
-  },
-  "permissions": ["CAMERA", "RECORD_AUDIO"]
+  }
 }
